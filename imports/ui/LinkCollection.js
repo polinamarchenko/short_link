@@ -1,12 +1,15 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Accounts } from 'meteor/accounts-base';
 
 export default class LinkCollection extends React.Component {
+  onLogout() {
+    Accounts.logout();
+  }
   render() {
     return (
       <div>
         <p>Link component here</p>
-        <Link to="/">Logout</Link>
+        <button onClick={this.onLogout}>Logout</button>
       </div>
     )
   }
