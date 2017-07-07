@@ -10,3 +10,12 @@ if (Meteor.isServer) {
     return Links.find({ userId });
   });
 }
+
+Meteor.methods({
+  addNumbers(a, b) {
+    if (typeof a !== 'number' || typeof b !== 'number') {
+      throw new Meteor.Error('invalid arguments', 'a and b schould be numbers');
+    }
+    return a+b;
+  }
+})
