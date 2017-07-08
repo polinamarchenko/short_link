@@ -2,6 +2,7 @@ import { Meteor } from 'meteor/meteor';
 import ReactDOM from 'react-dom';
 import { Tracker } from 'meteor/tracker';
 import { routes, onAuthChange } from './../imports/routes/routes';
+import './../imports/startup/simpl-schema-config.js';
 
 
 Tracker.autorun(() => {
@@ -10,8 +11,6 @@ Tracker.autorun(() => {
 });
 
 Meteor.startup(() => {
-  Meteor.call('addNumbers', 4, 5, (err, res) => {
-    console.log('addNumbers arguments', err, res);
-  })
+  Meteor.call('links.insert', 'Hello test 2');
   ReactDOM.render(routes, document.getElementById('app'));
 });
