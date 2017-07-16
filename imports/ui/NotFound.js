@@ -1,3 +1,3 @@
 import React from 'react';
 
-export default () => return <p>404 Error</p> 
+export default () => <p>404 Error</p> 
