@@ -1,0 +1,25 @@
+.btn {
+  background-color: $btn-bg;
+  border: none;
+  color: $btn-text-color;
+  padding: $input-spacing;
+  font-size: $base-font-size;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-bottom: $space;
+  line-height: 1.2;
+}
+
+.btn--link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn--small {
+  background-color: transparent;
+  border: 1px solid $btn-small-color;
+  color: $btn-small-color;
+  font-size: 1.4rem;
+  margin-right: $space;
+  padding: .5rem .8rem;
+}

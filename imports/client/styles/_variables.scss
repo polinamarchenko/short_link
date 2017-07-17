@@ -2,17 +2,20 @@
 $grey: #ddd;
 
 //spacing
-
 $space: 1.4rem;
 
 //font-sizes
-
 $base-font-size: 1.6rem;
 
 //form-inputs
-
 $input-border: $grey;
-//boxed-view vars
+$input-spacing: 1rem;
 
+//boxed-view vars
 $boxed-view-overlay-bg: $grey;
 $boxed-view-box-bg: white;
+
+//buttons
+$btn-bg: #F73011;
+$btn-text-color: white;
+$btn-small-color: #F73011;

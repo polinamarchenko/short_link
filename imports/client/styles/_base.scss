@@ -26,7 +26,7 @@ a {
 }
 
 input[type=text], input[type=email], input[type=password] {
-  padding: 1rem;
+  padding: $input-spacing;
   margin-bottom: $space;
   font-size: $base-font-size;
   border: 1px solid $input-border;
