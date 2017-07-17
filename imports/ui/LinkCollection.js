@@ -10,8 +10,8 @@ const LinkCollection = () => {
     <div>
       <PrivateHeader title="Your links"/>
       <LinksListFilters />
-      <LinksList />
       <CreateLink />
+      <LinksList />
     </div>
   )
 }
