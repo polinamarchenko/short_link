@@ -1,6 +1,5 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Links } from '../api/links';
 import LinksList from './LinksList';
 import PrivateHeader from './PrivateHeader';
 import CreateLink from './CreateLink';
@@ -11,8 +10,8 @@ const LinkCollection = () => {
     <div>
       <PrivateHeader title="Your links"/>
       <LinksListFilters />
-      <CreateLink />
       <LinksList />
+      <CreateLink />
     </div>
   )
 }

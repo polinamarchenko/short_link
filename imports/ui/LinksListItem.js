@@ -26,6 +26,12 @@ export default class LinksListItem extends React.Component {
     this.clipboard.destroy();
   }
 
+  renderStats() {
+    const lastVisitedTime = this.props.lastVisitedAt ? `(visited ${moment(this.props.lastVisitedAt).fromNow()})` : null;
+    const visitMessage = (this.props.visitedCount === 1) ? 'visit' : 'visits';
+    return <p>{this.props.visitedCount} {visitMessage} {lastVisitedTime}</p>
+  }
+
   render() {
     let copyButton = this.state.justCopied ? 'Copied' : 'Copy';
     return (
@@ -34,7 +40,7 @@ export default class LinksListItem extends React.Component {
         <p>
           <a href={this.props.shortUrl} target='_blank'>{this.props.shortUrl}</a>
         </p>
-        <p>{this.props.visitedCount} - {moment(this.props.lastVisitedAt).fromNow()}</p>
+        <p>{this.renderStats()}</p>
         <button ref="copy" data-clipboard-text={this.props.shortUrl}>{copyButton}</button>
         <button onClick={() => {
           Meteor.call('links.setVisibility', this.props._id, !this.props.visible)
