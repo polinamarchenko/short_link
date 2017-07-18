@@ -60,7 +60,7 @@ export default class CreateLink extends React.Component {
               value={this.state.url}
               onChange={this.onChange.bind(this)}
             />
-            <button className="btn">Add Link</button>
+            <button className="btn">Shorten</button>
             <button type="button" className="btn btn--secondary" onClick={this.onClose.bind(this)}>Cancel</button>
           </form>
 

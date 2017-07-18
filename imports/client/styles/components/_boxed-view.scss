@@ -1,7 +1,8 @@
 .boxed-view {
   align-items: center; //center vertically
   justify-content: center; //center horizontally
-  background: $boxed-view-overlay-bg;
+  background: url("bg2.jpeg");
+  // background: $boxed-view-overlay-bg;
   width: 100vw; //viewport width
   height: 100vh; //viewport height
   display: flex;
@@ -17,7 +18,7 @@
 }
 
 .boxed-view__box {
-  width: 40%;
+  width: 30rem;
   background: $boxed-view-box-bg;
   padding: 2.4rem;
   text-align: center;
