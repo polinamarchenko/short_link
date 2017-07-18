@@ -20,14 +20,14 @@
   border: 1px solid $btn-small-color;
   color: $btn-small-color;
   font-size: 1.4rem;
-  margin-right: $space;
+  margin: 0 ($space / 2) 0 0;
   padding: .5rem .8rem;
 }
 
 .btn--secondary {
   background-color: lighten($grey, 10%);
   border: 1px solid $grey;
-  color: darken($grey, 50%);
+  color: $darkgrey;
 }
 
 .btn--header {

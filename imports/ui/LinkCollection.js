@@ -9,9 +9,11 @@ const LinkCollection = () => {
   return (
     <div>
       <PrivateHeader title="Your links"/>
-      <LinksListFilters />
-      <CreateLink />
-      <LinksList />
+      <div className="page-content">
+        <LinksListFilters />
+        <CreateLink />
+        <LinksList />
+      </div>
     </div>
   )
 }
