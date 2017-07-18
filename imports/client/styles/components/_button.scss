@@ -29,3 +29,13 @@
   border: 1px solid $grey;
   color: darken($grey, 50%);
 }
+
+.btn--header {
+  border: 1px solid white;
+  background-color: transparent;
+  font-size: 1.4rem;
+  padding: .3rem .8rem;
+  margin: 0;
+  text-transform: none;
+  color: white;
+}

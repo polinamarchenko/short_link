@@ -4,6 +4,7 @@ $brand-primary: #F73011;
 
 //spacing
 $space: 1.4rem;
+$site-max-width: 50rem;
 
 //font-sizes
 $base-font-size: 1.6rem;
@@ -20,3 +21,7 @@ $boxed-view-box-bg: white;
 $btn-bg: $brand-primary;
 $btn-text-color: white;
 $btn-small-color: $brand-primary;
+
+//header
+$header-bg: $brand-primary;
+$header-color: white;
