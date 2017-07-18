@@ -23,3 +23,9 @@
   margin-right: $space;
   padding: .5rem .8rem;
 }
+
+.btn--secondary {
+  background-color: lighten($grey, 10%);
+  border: 1px solid $grey;
+  color: darken($grey, 50%);
+}

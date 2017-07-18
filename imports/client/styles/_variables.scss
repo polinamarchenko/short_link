@@ -1,5 +1,6 @@
 //colors:
 $grey: #ddd;
+$brand-primary: #F73011;
 
 //spacing
 $space: 1.4rem;
@@ -16,6 +17,6 @@ $boxed-view-overlay-bg: $grey;
 $boxed-view-box-bg: white;
 
 //buttons
-$btn-bg: #F73011;
+$btn-bg: $brand-primary;
 $btn-text-color: white;
-$btn-small-color: #F73011;
+$btn-small-color: $brand-primary;

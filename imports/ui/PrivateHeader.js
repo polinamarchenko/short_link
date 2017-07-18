@@ -5,8 +5,8 @@ import { Accounts } from 'meteor/accounts-base';
 
 const PrivateHeader = (props) => {
   return (
-    <div>
-      <p>{props.title}</p>
+    <div className="header">
+      <h1>{props.title}</h1>
       <button onClick={() => Accounts.logout() }>Logout</button>
     </div>
   )
